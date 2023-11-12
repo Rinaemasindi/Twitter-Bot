@@ -1,13 +1,17 @@
 from module.Twitter import Twitter
+import os
+from dotenv import load_dotenv
+load_dotenv()
+
 twt = Twitter()
 
 # Your Twitter username or email
-USERNAME = "naquwoso@ai1.lol"
+USERNAME = os.getenv("EMAIL")
 # Your Twitter password
-PASSWORD = 'mQnqD"D]Wc%GRa7'
+PASSWORD = os.getenv("PASSWORD")
 
-# Number of poeple you want to unfollow
-LIMIT = 10
+# # Number of poeple you want to unfollow
+# LIMIT = 10
 
-twt.login(USERNAME, PASSWORD)
-# twt.unfollow(LIMIT)
+# twt.login(USERNAME, PASSWORD)
+# # twt.unfollow(LIMIT)
