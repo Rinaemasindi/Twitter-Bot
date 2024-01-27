@@ -10,8 +10,9 @@ USERNAME = os.getenv("EMAIL")
 # Your Twitter password
 PASSWORD = os.getenv("PASSWORD")
 
-# # Number of poeple you want to unfollow
-# LIMIT = 10
+twt.login(USERNAME, PASSWORD)
 
-# twt.login(USERNAME, PASSWORD)
-# # twt.unfollow(LIMIT)
+# Number of poeple you want to unfollow
+LIMIT = 10
+
+twt.search_and_follow('test',29)
