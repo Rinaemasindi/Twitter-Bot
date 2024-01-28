@@ -10,6 +10,6 @@ USERNAME = os.getenv("EMAIL")
 # Your Twitter password
 PASSWORD = os.getenv("PASSWORD")
 
-twt.login('devrinae', 'ZZk7ezzJtzytP42')
+twt.login(USERNAME, PASSWORD)
 
-twt.search_tweets('ANC')
+twt.search_tweets('UFC', '2024-01-01', '2024-01-28')
